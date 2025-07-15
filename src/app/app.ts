@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, createComponent } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Variable } from './variable/variable';
+import { CreateObject } from './create-object/create-object';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet , Variable],
+  imports: [RouterOutlet , Variable, CreateObject],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
