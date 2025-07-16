@@ -23,7 +23,7 @@ export class CreateObject {
 
   constructor(){
     this.printProductDetals();
-    this.printTicketInfo();
+    // this.printTicketInfo();
     this.printSchoolInfo();
   }
 
@@ -43,29 +43,29 @@ export class CreateObject {
   //    To Location: Mumbai
   //    Date Of Journey: 08-04-2023 05.00 PM
 
-  trainTicketInfo :any ={
-    trainName :"VandeBharat",
-    trainNo :9922,
-    noOfPassenger :542,
-    from :"Mumbai",
-    to :"Delhi",
-    dateOfJourney :"25-6-2025 10:30 PM"
-  }
-  printTicketInfo(){
-    var name = this.trainTicketInfo.trainName;
-    var number = this.trainTicketInfo.trainNo;
-    var passengers =this.trainTicketInfo.noOfPassenger;
-    var trainFrom =this.trainTicketInfo.from;
-    var trainTO =this.trainTicketInfo.to;
-    var date =this.trainTicketInfo.dateOfJourney;
-    document.getElementById('ticketInfo')!.innerText = "Train Name  :" ,name;
-    document.getElementById('ticketInfo')!.innerText = "Train Number  :" ,number;
-    document.getElementById('ticketInfo')!.innerText = "Number of passengers  :" ,passengers;
-    document.getElementById('ticketInfo')!.innerText = "Train fro   :" ,trainFrom;
-    document.getElementById('ticketInfo')!.innerText = "Train to  :" ,trainTO;
-    document.getElementById('ticketInfo')!.innerText = "date of journey  :" ,date;
+  // trainTicketInfo :any ={
+  //   trainName :"VandeBharat",
+  //   trainNo :9922,
+  //   noOfPassenger :542,
+  //   from :"Mumbai",
+  //   to :"Delhi",
+  //   dateOfJourney :"25-6-2025 10:30 PM"
+  // }
+  // printTicketInfo(){
+  //   var name = this.trainTicketInfo.trainName;
+  //   var number = this.trainTicketInfo.trainNo;
+  //   var passengers =this.trainTicketInfo.noOfPassenger;
+  //   var trainFrom =this.trainTicketInfo.from;
+  //   var trainTO =this.trainTicketInfo.to;
+  //   var date =this.trainTicketInfo.dateOfJourney;
+  //   document.getElementById('ticketInfo')!.innerText = "Train Name  :" ,name;
+  //   document.getElementById('ticketInfo')!.innerText = "Train Number  :" ,number;
+    // document.getElementById('ticketInfo')!.innerText = "Number of passengers  :" ,passengers;
+    // document.getElementById('ticketInfo')!.innerText = "Train fro   :" ,trainFrom;
+    // document.getElementById('ticketInfo')!.innerText = "Train to  :" ,trainTO;
+    // document.getElementById('ticketInfo')!.innerText = "date of journey  :" ,date;
     
-  }
+  
 
 
   // C. Create a Object to Hold Information of School
