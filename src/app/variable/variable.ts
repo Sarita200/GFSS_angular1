@@ -22,6 +22,9 @@ constructor(){
 }
 
 printFullName(){
+  console.log("     ");
+  console.log("*** VARIABLE TASK ***");
+  console.log("  TASK 1  ");
   console.log("Student Full Name :" , this.fullName);
 }
 
@@ -34,6 +37,8 @@ class :string = "Information Technology";
 rollNo :number = 24;
 
 studentDetails(){
+  console.log("  ");
+  console.log("  TASK 2  ");
   console.log("Student Name :" , this.name);
   console.log("Student Roll Number :" , this.rollNo);
   console.log("Student Father Name :" , this.fatherName);

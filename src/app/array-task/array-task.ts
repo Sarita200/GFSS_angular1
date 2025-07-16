@@ -18,6 +18,8 @@ export class ArrayTask {
   }
 
   printCityDetails() {
+    console.log("     ");
+    console.log("*** ARRAY TASK ***");
     console.log("City Array Length:", this.cityArray.length);
     console.log("3rd Element in City Array:", this.cityArray[2]);
   }

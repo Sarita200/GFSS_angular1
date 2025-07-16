@@ -28,6 +28,8 @@ export class CreateObject {
   }
 
   printProductDetals(){
+    console.log("   ")
+     console.log("*** OBJECT TASK ***")
      console.log("Product Details..");
      console.log("Product Name :", this.productInfo.productName);
      console.log("Price :", this.productInfo.price);
@@ -80,6 +82,8 @@ export class CreateObject {
     address :"At.Nashik,near green Vally,phase no2,Nashik"
   }
   printSchoolInfo(){
+    console.log("  ")
+    console.log("  TASK 3  ")
     console.log("School Information");
     console.log("School Name :",this.schoolInfo.schoolName);
     console.log("School Principle Name :",this.schoolInfo.principleName);
