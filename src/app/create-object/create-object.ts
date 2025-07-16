@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { styleText } from 'util';
+
 
 @Component({
   selector: 'app-create-object',
-  imports: [],
+  imports: [ ],
   templateUrl: './create-object.html',
   styleUrl: './create-object.css'
 })
@@ -23,6 +23,8 @@ export class CreateObject {
 
   constructor(){
     this.printProductDetals();
+    this.printTicketInfo();
+    this.printSchoolInfo();
   }
 
   printProductDetals(){
@@ -49,9 +51,20 @@ export class CreateObject {
     to :"Delhi",
     dateOfJourney :"25-6-2025 10:30 PM"
   }
-  ticket(){
+  printTicketInfo(){
     var name = this.trainTicketInfo.trainName;
-    document.getElementById('trainInfo')?.style.borderRadius.
+    var number = this.trainTicketInfo.trainNo;
+    var passengers =this.trainTicketInfo.noOfPassenger;
+    var trainFrom =this.trainTicketInfo.from;
+    var trainTO =this.trainTicketInfo.to;
+    var date =this.trainTicketInfo.dateOfJourney;
+    document.getElementById('ticketInfo')!.innerText = "Train Name  :" ,name;
+    document.getElementById('ticketInfo')!.innerText = "Train Number  :" ,number;
+    document.getElementById('ticketInfo')!.innerText = "Number of passengers  :" ,passengers;
+    document.getElementById('ticketInfo')!.innerText = "Train fro   :" ,trainFrom;
+    document.getElementById('ticketInfo')!.innerText = "Train to  :" ,trainTO;
+    document.getElementById('ticketInfo')!.innerText = "date of journey  :" ,date;
+    
   }
 
 
@@ -65,5 +78,13 @@ export class CreateObject {
     principleName : "Chatur R.S",
     contactNo :9922567843,
     address :"At.Nashik,near green Vally,phase no2,Nashik"
+  }
+  printSchoolInfo(){
+    console.log("School Information");
+    console.log("School Name :",this.schoolInfo.schoolName);
+    console.log("School Principle Name :",this.schoolInfo.principleName);
+    console.log("School Contact :",this.schoolInfo.contactNo);
+    console.log("School Address :",this.schoolInfo.address);
+
   }
 }
