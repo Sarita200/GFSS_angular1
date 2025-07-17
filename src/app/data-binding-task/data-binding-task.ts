@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-data-binding-task',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './data-binding-task.html',
   styleUrl: './data-binding-task.css'
 })
@@ -33,4 +34,10 @@ export class DataBindingTask {
   showAlert() {
     alert("Button is Clicked..!!");
   }
+
+  /* A.Create a new Angular component named TwoWayBinding.
+       Add a text input field to the component's template.
+       Use two-way data binding to update the userInput property as the user types.*/
+
+       inputText :string = '';
 }

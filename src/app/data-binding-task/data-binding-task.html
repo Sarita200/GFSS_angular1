@@ -11,11 +11,19 @@
         <img [src]="imgUrl" alt="White horse image" width="300" height="200"/>
         <p>{{imgMessage}}</p>
     </div>
+    <p>-------------------------------------------------------------------------</p>
 
     <div>
         <h3 style="color: red;">Event Binding Task</h3>
         <button (click)="showAlert()" class="btn" style="background-color: blue; color: white;
             border-radius: 10px; border: none; padding : 10px; font-weight: bold;">
             Click Me</button>
+    </div>
+    <p>-------------------------------------------------------------------------</p>
+
+    <div>
+        <h3 style="color: red;">Two way Data-Binding Task</h3>
+        <input type="text" name="" id="" placeholder="Type Here" [(ngModel)]="inputText">
+        <p>Your Input :{{inputText}}</p>
     </div>
 </div>
