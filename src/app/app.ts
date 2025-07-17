@@ -6,9 +6,10 @@ import { NgFor15Jully } from './ng-for15-jully/ng-for15-jully';
 import { ArrayTask } from './array-task/array-task';
 import { FunctionTask } from './function-task/function-task';
 import { DataBindingTask } from './data-binding-task/data-binding-task';
+import { Jully17 } from './jully17/jully17';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Variable, CreateObject ,NgFor15Jully,ArrayTask,FunctionTask,DataBindingTask],
+  imports: [RouterOutlet,Variable, CreateObject ,NgFor15Jully,ArrayTask,FunctionTask,DataBindingTask,Jully17],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

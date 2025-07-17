@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-jully17',
   imports: [],
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './jully17.css'
 })
 export class Jully17 {
-
+  divWidth :number =100;
 }
